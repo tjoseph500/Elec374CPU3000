@@ -7,9 +7,10 @@ module booth_multiplier (
     integer i;
     wire signed [31:0] M_Neg;
     reg  signed [63:0] partial;
+	 //multiplier Q with one extra bit added
     wire [32:0] Q_ext;
 
-    // Q with extra LSB bit for Booth encoding
+    // Q with extra LSB bit for Booth encoding, adds 0 to the right 
     assign Q_ext = {Q, 1'b0};
 
     // 2's complement of M
@@ -17,7 +18,7 @@ module booth_multiplier (
 
     always @(*) begin
         partial = 64'sd0;
-
+//shifting the multiplicand so it lines up with the correct multiplier bit position.
         for (i = 1; i < 32; i = i + 2) begin
             case ({Q_ext[i+1], Q_ext[i], Q_ext[i-1]})
                 3'b001, 3'b010: partial = partial + ({{32{M[31]}},     M}      <<< (i-1)); // +1*M
@@ -28,8 +29,7 @@ module booth_multiplier (
             endcase
         end
 
-        // 32-bit datapath output: keep only the lower 32 bits (wrap)
-        Result = partial[31:0];
+        Result = partial;
     end
 
 endmodule

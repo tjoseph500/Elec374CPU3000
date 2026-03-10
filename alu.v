@@ -43,8 +43,8 @@ rotate_left rol  (ALUin, BusMuxOut, rol_out);
 AND_Operation and_OP (ALUin, BusMuxOut, and_out);
 OR_Operation or_OP (ALUin, BusMuxOut, or_out);
 
-twoCom neg  (ALUin, neg_out);
-oneCom not_OP  (ALUin, not_out);
+twoCom neg  (BusMuxOut, neg_out);
+oneCom not_OP  (BusMuxOut, not_out);
 
 
 // =========================
