@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU_G16
-Mon Mar 16 16:50:05 2026
+Mon Mar 16 17:27:54 2026
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -9,7 +9,7 @@ Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: register:R0
+  4. Parameter Settings for User Entity Instance: register0:R0|register:r0
   5. Parameter Settings for User Entity Instance: register:R1
   6. Parameter Settings for User Entity Instance: register:R2
   7. Parameter Settings for User Entity Instance: register:R3
@@ -33,11 +33,13 @@ Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
  25. Parameter Settings for User Entity Instance: mdr:mdr1|register:mdr_1
  26. Parameter Settings for User Entity Instance: register:mar
  27. Parameter Settings for User Entity Instance: register:ir
- 28. Analysis & Elaboration Settings
- 29. Port Connectivity Checks: "register:mar"
- 30. Port Connectivity Checks: "ALU:alu|subtract:sub|twoCom:u_twocom|adder:adder_inst"
- 31. Analysis & Elaboration Messages
- 32. Analysis & Elaboration Suppressed Messages
+ 28. Parameter Settings for User Entity Instance: register:Outport
+ 29. Parameter Settings for User Entity Instance: inport:Inport1
+ 30. Analysis & Elaboration Settings
+ 31. Port Connectivity Checks: "register:mar"
+ 32. Port Connectivity Checks: "ALU:alu|subtract:sub|twoCom:u_twocom|adder:adder_inst"
+ 33. Analysis & Elaboration Messages
+ 34. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -64,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Mar 16 16:50:05 2026       ;
+; Analysis & Elaboration Status ; Successful - Mon Mar 16 17:27:54 2026       ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU_G16                                     ;
 ; Top-level Entity Name         ; CPU_G16                                     ;
@@ -95,15 +97,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:R0            ;
-+----------------+----------------------------------+-----------------+
-; Parameter Name ; Value                            ; Type            ;
-+----------------+----------------------------------+-----------------+
-; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
-; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
-; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
-+----------------+----------------------------------+-----------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register0:R0|register:r0 ;
++----------------+----------------------------------+-------------------+
+; Parameter Name ; Value                            ; Type              ;
++----------------+----------------------------------+-------------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer    ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer    ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary   ;
++----------------+----------------------------------+-------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -381,6 +383,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:Outport       ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inport:Inport1         ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -493,7 +519,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Mon Mar 16 16:49:55 2026
+    Info: Processing started: Mon Mar 16 17:27:40 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU_G16 -c CPU_G16 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -548,6 +574,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram.v
     Info (12023): Found entity 1: ram File: C:/QueenU/ELEC 374/ELEC374CPU3000/ram.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sel.v
     Info (12023): Found entity 1: SEL File: C:/QueenU/ELEC 374/ELEC374CPU3000/SEL.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file register0.v
+    Info (12023): Found entity 1: register0 File: C:/QueenU/ELEC 374/ELEC374CPU3000/register0.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file inport.v
+    Info (12023): Found entity 1: inport File: C:/QueenU/ELEC 374/ELEC374CPU3000/inport.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "clock" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Write" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "HIout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
@@ -565,7 +595,7 @@ Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created i
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "LOin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Zhighin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Zlowin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "InPortin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "OutPortin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Cin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "ADD" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "SUB" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
@@ -579,42 +609,43 @@ Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created i
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "OR" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "NEG" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
 Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "NOT" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(24): created implicit net for "R0in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 24
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(25): created implicit net for "R1in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 25
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(26): created implicit net for "R2in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 26
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(27): created implicit net for "R3in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 27
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(28): created implicit net for "R4in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(29): created implicit net for "R5in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(30): created implicit net for "R6in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(31): created implicit net for "R7in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 31
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(32): created implicit net for "R8in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 32
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(33): created implicit net for "R9in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(34): created implicit net for "R10in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 34
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(35): created implicit net for "R11in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 35
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(36): created implicit net for "R12in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 36
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(37): created implicit net for "R13in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 37
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(38): created implicit net for "R14in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(39): created implicit net for "R15in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R0out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R1out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R2out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R3out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R4out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R5out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R6out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R7out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R8out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R9out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R10out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R11out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R12out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R13out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R14out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R15out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(58): created implicit net for "MARin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(28): created implicit net for "R0in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(29): created implicit net for "R1in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(30): created implicit net for "R2in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(31): created implicit net for "R3in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(32): created implicit net for "R4in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(33): created implicit net for "R5in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(34): created implicit net for "R6in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(35): created implicit net for "R7in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(36): created implicit net for "R8in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(37): created implicit net for "R9in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(38): created implicit net for "R10in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(39): created implicit net for "R11in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(40): created implicit net for "R12in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(41): created implicit net for "R13in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(42): created implicit net for "R14in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(43): created implicit net for "R15in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R0out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R1out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R2out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R3out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R4out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R5out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R6out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R7out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R8out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R9out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R10out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R11out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R12out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R13out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R14out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(62): created implicit net for "R15out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(68): created implicit net for "MARin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 68
 Info (12127): Elaborating entity "CPU_G16" for the top level hierarchy
-Info (12128): Elaborating entity "register" for hierarchy "register:R0" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 24
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 43
+Info (12128): Elaborating entity "register0" for hierarchy "register0:R0" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 28
+Info (12128): Elaborating entity "register" for hierarchy "register0:R0|register:r0" File: C:/QueenU/ELEC 374/ELEC374CPU3000/register0.v Line: 10
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 49
 Info (12128): Elaborating entity "adder" for hierarchy "ALU:alu|adder:add" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 31
 Info (12128): Elaborating entity "subtract" for hierarchy "ALU:alu|subtract:sub" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 32
 Info (12128): Elaborating entity "twoCom" for hierarchy "ALU:alu|subtract:sub|twoCom:u_twocom" File: C:/QueenU/ELEC 374/ELEC374CPU3000/subtract.v Line: 14
@@ -806,18 +837,19 @@ Info (10041): Inferred latch for "Result[30]" at rotate_left.v(66) File: C:/Quee
 Info (10041): Inferred latch for "Result[31]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
 Info (12128): Elaborating entity "AND_Operation" for hierarchy "ALU:alu|AND_Operation:and_OP" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 43
 Info (12128): Elaborating entity "OR_Operation" for hierarchy "ALU:alu|OR_Operation:or_OP" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 44
-Info (12128): Elaborating entity "register64" for hierarchy "register64:Z" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 45
-Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
-Info (12128): Elaborating entity "mdr" for hierarchy "mdr:mdr1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 56
-Info (12128): Elaborating entity "ram" for hierarchy "ram:Ram1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
-Info (12128): Elaborating entity "SEL" for hierarchy "SEL:sel1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 65
+Info (12128): Elaborating entity "register64" for hierarchy "register64:Z" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 52
+Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Info (12128): Elaborating entity "mdr" for hierarchy "mdr:mdr1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 65
+Info (12128): Elaborating entity "ram" for hierarchy "ram:Ram1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 74
+Info (12128): Elaborating entity "SEL" for hierarchy "SEL:sel1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 77
+Info (12128): Elaborating entity "inport" for hierarchy "inport:Inport1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 83
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/QueenU/ELEC 374/ELEC374CPU3000/output_files/CPU_G16.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 85 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Mon Mar 16 16:50:05 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Mon Mar 16 17:27:54 2026
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +--------------------------------------------+

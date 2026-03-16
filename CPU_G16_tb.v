@@ -28,7 +28,7 @@ module CPU_G16_tb;
 
     reg [3:0] Present_state = Default;
 
- CPU_G16 DUT(clock, clear, Read, Write, HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout, HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, InPortin, Cin, Yin, IRin, ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT);
+ CPU_G16 DUT(clock, clear, Read, Write, HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout, HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, OutPortin, Cin, Yin, IRin, ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT);
 
     // Clock generation
     initial begin

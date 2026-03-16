@@ -1,0 +1,14 @@
+//R0 
+module register0(clear, clock, R0in, BusMuxOut, BusMuxIn_R0, BAout);
+
+input clear, clock, R0in, BAout;
+input [31:0] BusMuxOut; 
+output BusMuxIn_R0;
+
+wire [31:0] r0_to_and;
+
+register r0(clear, clock, R0in, BusMuxOut, r0_to_and); 
+
+assign BusMuxIn_R0 = r0_to_and&BAout;
+
+endmodule
