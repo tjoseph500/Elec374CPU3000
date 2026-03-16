@@ -1,14 +1,11 @@
 module CPU_G16(
-	input wire clock, clear, Read,
+	input wire clock, clear, Read, Write,
 
-	input wire R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Cout,
+	input wire HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout,
 			
-	input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in, HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, InPortin, Cin, Yin, IRin,
+	input wire HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, InPortin, Cin, Yin, IRin,
 
-	input wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT,
-	
-	input wire [31:0] Mdatain
-
+	input wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT
 );
 
    wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, BusMuxIn_R4, BusMuxIn_R5, BusMuxIn_R6, BusMuxIn_R7, BusMuxIn_R8, BusMuxIn_R9, BusMuxIn_R10, BusMuxIn_R11, BusMuxIn_R12, BusMuxIn_R13, BusMuxIn_R14, BusMuxIn_R15, BusMuxIn_HI, BusMuxIn_LO, BusMuxIn_Zhigh, BusMuxIn_Zlow, BusMuxIn_PC, BusMuxIn_MDR, BusMuxIn_InPort, C_sign_extended;
@@ -16,6 +13,12 @@ module CPU_G16(
 	wire [31:0] ALUin;
 	
 	wire [63:0] ALUout;
+	
+	wire [31:0] IR_to_SEL;
+	
+	wire [31:0] Mdatain;
+	
+	wire [8:0] MAR_to_RAM;
 
 	//Registers
 	register R0(clear, clock, R0in, BusMuxOut, BusMuxIn_R0);
@@ -52,7 +55,12 @@ module CPU_G16(
 	//MDR
 	mdr mdr1(clear, clock, MDRin, Read, BusMuxOut, Mdatain, BusMuxIn_MDR);
 	
-	register mar(clear, clock, MARin, BusMuxOut, BusMuxIn_MAR);
-   register ir(clear, clock, IRin,  BusMuxOut, BusMuxIn_IR);
-
+	register mar(clear, clock, MARin, BusMuxOut, MAR_to_RAM);
+   register ir(clear, clock, IRin,  BusMuxOut, IR_to_SEL);
+	
+	//Ram
+	ram Ram1(BusMuxIn_MDR, Mdatain, MAR_to_RAM, Read, Write, clock);
+	
+	//Select and Encode Logic
+	SEL sel1(IR_to_SEL, Gra, Grb, Grc, Rin, Rout, BAout, Cout, R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in, R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out);
 endmodule

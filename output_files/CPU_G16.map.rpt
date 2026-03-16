@@ -1,25 +1,52 @@
-Analysis & Synthesis report for CPU_G16
-Sat Feb 07 16:29:47 2026
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Analysis & Elaboration report for CPU_G16
+Mon Mar 16 16:50:05 2026
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: register:R0
+  5. Parameter Settings for User Entity Instance: register:R1
+  6. Parameter Settings for User Entity Instance: register:R2
+  7. Parameter Settings for User Entity Instance: register:R3
+  8. Parameter Settings for User Entity Instance: register:R4
+  9. Parameter Settings for User Entity Instance: register:R5
+ 10. Parameter Settings for User Entity Instance: register:R6
+ 11. Parameter Settings for User Entity Instance: register:R7
+ 12. Parameter Settings for User Entity Instance: register:R8
+ 13. Parameter Settings for User Entity Instance: register:R9
+ 14. Parameter Settings for User Entity Instance: register:R10
+ 15. Parameter Settings for User Entity Instance: register:R11
+ 16. Parameter Settings for User Entity Instance: register:R12
+ 17. Parameter Settings for User Entity Instance: register:R13
+ 18. Parameter Settings for User Entity Instance: register:R14
+ 19. Parameter Settings for User Entity Instance: register:R15
+ 20. Parameter Settings for User Entity Instance: register:Y
+ 21. Parameter Settings for User Entity Instance: register64:Z
+ 22. Parameter Settings for User Entity Instance: register:HI
+ 23. Parameter Settings for User Entity Instance: register:LO
+ 24. Parameter Settings for User Entity Instance: register:PC
+ 25. Parameter Settings for User Entity Instance: mdr:mdr1|register:mdr_1
+ 26. Parameter Settings for User Entity Instance: register:mar
+ 27. Parameter Settings for User Entity Instance: register:ir
+ 28. Analysis & Elaboration Settings
+ 29. Port Connectivity Checks: "register:mar"
+ 30. Port Connectivity Checks: "ALU:alu|subtract:sub|twoCom:u_twocom|adder:adder_inst"
+ 31. Analysis & Elaboration Messages
+ 32. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -29,30 +56,333 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Feb 07 16:29:47 2026               ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
-; Revision Name               ; CPU_G16                                         ;
-; Top-level Entity Name       ; CPU_G16                                         ;
-; Family                      ; Cyclone V                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon Mar 16 16:50:05 2026       ;
+; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
+; Revision Name                 ; CPU_G16                                     ;
+; Top-level Entity Name         ; CPU_G16                                     ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R0            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R1            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R2            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R3            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R4            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R5            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R6            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R7            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R8            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R9            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R10           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R11           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R12           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R13           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R14           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R15           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:Y             ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register64:Z                                           ;
++----------------+------------------------------------------------------------------+-----------------+
+; Parameter Name ; Value                                                            ; Type            ;
++----------------+------------------------------------------------------------------+-----------------+
+; INIT           ; 0000000000000000000000000000000000000000000000000000000000000000 ; Unsigned Binary ;
++----------------+------------------------------------------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:HI            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:LO            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:PC            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mdr:mdr1|register:mdr_1 ;
++----------------+----------------------------------+------------------+
+; Parameter Name ; Value                            ; Type             ;
++----------------+----------------------------------+------------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer   ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer   ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary  ;
++----------------+----------------------------------+------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:mar           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:ir            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -138,88 +468,361 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register:mar"                                                                                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; BusMuxIn ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (9 bits) it drives; bit(s) "BusMuxIn[31..9]" have no fanouts ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu|subtract:sub|twoCom:u_twocom|adder:adder_inst" ;
++----------+-------+----------+-----------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                             ;
++----------+-------+----------+-----------------------------------------------------+
+; B[31..1] ; Input ; Info     ; Stuck at GND                                        ;
+; B[0]     ; Input ; Info     ; Stuck at VCC                                        ;
++----------+-------+----------+-----------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Sat Feb 07 16:29:42 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU_G16 -c CPU_G16
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+    Info: Processing started: Mon Mar 16 16:49:55 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU_G16 -c CPU_G16 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file shiftrighta.v
+    Info (12023): Found entity 1: shiftRightA File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rotate_right.v
+    Info (12023): Found entity 1: rotate_right File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rotate_left.v
+    Info (12023): Found entity 1: rotate_left File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 2
+Warning (12018): Entity "NOT" will be ignored because it conflicts with Quartus Prime primitive name File: C:/QueenU/ELEC 374/ELEC374CPU3000/not.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file not.v
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_g16_tb.v
+    Info (12023): Found entity 1: CPU_G16_tb File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_g16.v
+    Info (12023): Found entity 1: CPU_G16 File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_datapath_tb.v
+    Info (12023): Found entity 1: datapath_tb File: C:/QueenU/ELEC 374/ELEC374CPU3000/and_datapath_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register.v
-    Info (12023): Found entity 1: register File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/register.v Line: 1
+    Info (12023): Found entity 1: register File: C:/QueenU/ELEC 374/ELEC374CPU3000/register.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file memorydataregister.v
 Info (12021): Found 1 design units, including 1 entities, in source file mdreg.v
-    Info (12023): Found entity 1: mdr File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/mdreg.v Line: 1
+    Info (12023): Found entity 1: mdr File: C:/QueenU/ELEC 374/ELEC374CPU3000/mdreg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bus.v
-    Info (12023): Found entity 1: Bus File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/bus.v Line: 1
+    Info (12023): Found entity 1: Bus File: C:/QueenU/ELEC 374/ELEC374CPU3000/bus.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register64.v
-    Info (12023): Found entity 1: register64 File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/register64.v Line: 1
-Warning (12018): Entity "AND" will be ignored because it conflicts with Quartus Prime primitive name File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/and.v Line: 2
+    Info (12023): Found entity 1: register64 File: C:/QueenU/ELEC 374/ELEC374CPU3000/register64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and.v
-Warning (12018): Entity "OR" will be ignored because it conflicts with Quartus Prime primitive name File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/or.v Line: 2
+    Info (12023): Found entity 1: AND_Operation File: C:/QueenU/ELEC 374/ELEC374CPU3000/and.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file or.v
+    Info (12023): Found entity 1: OR_Operation File: C:/QueenU/ELEC 374/ELEC374CPU3000/or.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file onecom.v
-    Info (12023): Found entity 1: oneCom File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/oneCom.v Line: 2
+    Info (12023): Found entity 1: oneCom File: C:/QueenU/ELEC 374/ELEC374CPU3000/oneCom.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
-    Info (12023): Found entity 1: adder File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/adder.v Line: 2
-Warning (10275): Verilog HDL Module Instantiation warning at twoCom.v(14): ignored dangling comma in List of Port Connections File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 14
-Warning (10275): Verilog HDL Module Instantiation warning at twoCom.v(21): ignored dangling comma in List of Port Connections File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 21
+    Info (12023): Found entity 1: adder File: C:/QueenU/ELEC 374/ELEC374CPU3000/adder.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file twocom.v
-    Info (12023): Found entity 1: twoCom File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 2
-Warning (10275): Verilog HDL Module Instantiation warning at subtract.v(14): ignored dangling comma in List of Port Connections File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 14
-Warning (10275): Verilog HDL Module Instantiation warning at subtract.v(21): ignored dangling comma in List of Port Connections File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 21
+    Info (12023): Found entity 1: twoCom File: C:/QueenU/ELEC 374/ELEC374CPU3000/twoCom.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file subtract.v
-    Info (12023): Found entity 1: subtract File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 2
+    Info (12023): Found entity 1: subtract File: C:/QueenU/ELEC 374/ELEC374CPU3000/subtract.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
-    Info (12023): Found entity 1: booth_multiplier File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/multiplier.v Line: 2
+    Info (12023): Found entity 1: booth_multiplier File: C:/QueenU/ELEC 374/ELEC374CPU3000/multiplier.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and_tb.v
-    Info (12023): Found entity 1: tb_AND File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/and_tb.v Line: 2
+    Info (12023): Found entity 1: tb_AND File: C:/QueenU/ELEC 374/ELEC374CPU3000/and_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file divider.v
-    Info (12023): Found entity 1: divider File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/divider.v Line: 2
+    Info (12023): Found entity 1: divider File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftright.v
-    Info (12023): Found entity 1: shiftRight File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/shiftRight.v Line: 1
+    Info (12023): Found entity 1: shiftRight File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft.v
-    Info (12023): Found entity 1: shiftLeft File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/shiftLeft.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at twoCom.v(8): created implicit net for "const_1" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at twoCom.v(12): created implicit net for "A_oneCom" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at twoCom.v(13): created implicit net for "Result_oneCom" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at twoCom.v(18): created implicit net for "A_add" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at twoCom.v(19): created implicit net for "B_add" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at twoCom.v(20): created implicit net for "Result_add" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/twoCom.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at subtract.v(12): created implicit net for "A_twoCom" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at subtract.v(13): created implicit net for "Result_twoCom" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at subtract.v(18): created implicit net for "A_add" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at subtract.v(19): created implicit net for "B_add" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at subtract.v(20): created implicit net for "Result_add" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/subtract.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at multiplier.v(14): created implicit net for "const_1" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/multiplier.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at multiplier.v(18): created implicit net for "A" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/multiplier.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at multiplier.v(18): created implicit net for "B" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/multiplier.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at multiplier.v(22): created implicit net for "A_twoCom" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/multiplier.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at multiplier.v(22): created implicit net for "Result_twoCom" File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/multiplier.v Line: 22
-Error (12007): Top-level design entity "CPU_G16" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 24 warnings
-    Error: Peak virtual memory: 4780 megabytes
-    Error: Processing ended: Sat Feb 07 16:29:47 2026
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:11
+    Info (12023): Found entity 1: shiftLeft File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: ram File: C:/QueenU/ELEC 374/ELEC374CPU3000/ram.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sel.v
+    Info (12023): Found entity 1: SEL File: C:/QueenU/ELEC 374/ELEC374CPU3000/SEL.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "clock" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Write" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "HIout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "LOout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Zhighout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "InPortout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Gra" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Grb" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Grc" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Rin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Rout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "BAout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Cout" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "HIin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "LOin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Zhighin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Zlowin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "InPortin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "Cin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "ADD" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "SUB" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "MUL" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "DIV" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "SHRA" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "SHL" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "ROR" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "ROL" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "AND" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "OR" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "NEG" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16_tb.v(31): created implicit net for "NOT" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(24): created implicit net for "R0in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(25): created implicit net for "R1in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(26): created implicit net for "R2in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(27): created implicit net for "R3in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(28): created implicit net for "R4in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(29): created implicit net for "R5in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(30): created implicit net for "R6in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(31): created implicit net for "R7in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(32): created implicit net for "R8in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(33): created implicit net for "R9in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(34): created implicit net for "R10in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(35): created implicit net for "R11in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(36): created implicit net for "R12in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(37): created implicit net for "R13in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(38): created implicit net for "R14in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(39): created implicit net for "R15in" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R0out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R1out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R2out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R3out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R4out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R5out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R6out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R7out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R8out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R9out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R10out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R11out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R12out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R13out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R14out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(53): created implicit net for "R15out" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at CPU_G16.v(58): created implicit net for "MARin" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 58
+Info (12127): Elaborating entity "CPU_G16" for the top level hierarchy
+Info (12128): Elaborating entity "register" for hierarchy "register:R0" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 24
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 43
+Info (12128): Elaborating entity "adder" for hierarchy "ALU:alu|adder:add" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 31
+Info (12128): Elaborating entity "subtract" for hierarchy "ALU:alu|subtract:sub" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 32
+Info (12128): Elaborating entity "twoCom" for hierarchy "ALU:alu|subtract:sub|twoCom:u_twocom" File: C:/QueenU/ELEC 374/ELEC374CPU3000/subtract.v Line: 14
+Info (12128): Elaborating entity "oneCom" for hierarchy "ALU:alu|subtract:sub|twoCom:u_twocom|oneCom:OneCom_inst" File: C:/QueenU/ELEC 374/ELEC374CPU3000/twoCom.v Line: 19
+Info (12128): Elaborating entity "booth_multiplier" for hierarchy "ALU:alu|booth_multiplier:mul" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 33
+Info (12128): Elaborating entity "divider" for hierarchy "ALU:alu|divider:div" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 34
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "signQ", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "signM", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "signResult", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "absQ", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "absM", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "A", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "Q_reg", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at divider.v(21): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v Line: 21
+Info (12128): Elaborating entity "shiftRight" for hierarchy "ALU:alu|shiftRight:shr" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 36
+Warning (10240): Verilog HDL Always Construct warning at shiftRight.v(16): inferring latch(es) for variable "Result", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at shiftRight.v(16): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 16
+Info (10041): Inferred latch for "Result[0]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[1]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[2]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[3]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[4]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[5]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[6]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[7]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[8]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[9]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[10]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[11]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[12]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[13]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[14]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[15]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[16]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[17]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[18]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[19]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[20]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[21]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[22]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[23]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[24]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[25]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[26]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[27]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[28]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[29]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[30]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (10041): Inferred latch for "Result[31]" at shiftRight.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v Line: 25
+Info (12128): Elaborating entity "shiftRightA" for hierarchy "ALU:alu|shiftRightA:shra" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at shiftRightA.v(18): inferring latch(es) for variable "Result", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at shiftRightA.v(18): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 18
+Info (10041): Inferred latch for "Result[0]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[1]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[2]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[3]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[4]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[5]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[6]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[7]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[8]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[9]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[10]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[11]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[12]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[13]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[14]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[15]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[16]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[17]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[18]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[19]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[20]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[21]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[22]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[23]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[24]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[25]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[26]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[27]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[28]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[29]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[30]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (10041): Inferred latch for "Result[31]" at shiftRightA.v(32) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v Line: 32
+Info (12128): Elaborating entity "shiftLeft" for hierarchy "ALU:alu|shiftLeft:shl" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at shiftLeft.v(15): inferring latch(es) for variable "Result", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 15
+Warning (10240): Verilog HDL Always Construct warning at shiftLeft.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 15
+Info (10041): Inferred latch for "Result[0]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[1]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[2]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[3]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[4]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[5]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[6]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[7]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[8]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[9]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[10]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[11]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[12]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[13]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[14]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[15]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[16]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[17]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[18]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[19]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[20]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[21]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[22]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[23]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[24]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[25]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[26]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[27]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[28]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[29]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[30]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (10041): Inferred latch for "Result[31]" at shiftLeft.v(25) File: C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v Line: 25
+Info (12128): Elaborating entity "rotate_right" for hierarchy "ALU:alu|rotate_right:ror" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 40
+Warning (10036): Verilog HDL or VHDL warning at rotate_right.v(9): object "shiftTemp" assigned a value but never read File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at rotate_right.v(18): inferring latch(es) for variable "Result", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 18
+Info (10041): Inferred latch for "Result[0]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[1]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[2]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[3]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[4]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[5]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[6]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[7]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[8]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[9]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[10]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[11]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[12]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[13]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[14]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[15]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[16]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[17]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[18]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[19]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[20]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[21]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[22]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[23]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[24]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[25]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[26]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[27]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[28]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[29]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[30]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (10041): Inferred latch for "Result[31]" at rotate_right.v(65) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v Line: 65
+Info (12128): Elaborating entity "rotate_left" for hierarchy "ALU:alu|rotate_left:rol" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 41
+Warning (10036): Verilog HDL or VHDL warning at rotate_left.v(10): object "shiftTemp" assigned a value but never read File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 10
+Warning (10240): Verilog HDL Always Construct warning at rotate_left.v(16): inferring latch(es) for variable "Result", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 16
+Info (10041): Inferred latch for "Result[0]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[1]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[2]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[3]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[4]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[5]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[6]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[7]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[8]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[9]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[10]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[11]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[12]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[13]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[14]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[15]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[16]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[17]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[18]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[19]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[20]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[21]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[22]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[23]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[24]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[25]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[26]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[27]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[28]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[29]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[30]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (10041): Inferred latch for "Result[31]" at rotate_left.v(66) File: C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v Line: 66
+Info (12128): Elaborating entity "AND_Operation" for hierarchy "ALU:alu|AND_Operation:and_OP" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 43
+Info (12128): Elaborating entity "OR_Operation" for hierarchy "ALU:alu|OR_Operation:or_OP" File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 44
+Info (12128): Elaborating entity "register64" for hierarchy "register64:Z" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 45
+Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 53
+Info (12128): Elaborating entity "mdr" for hierarchy "mdr:mdr1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 56
+Info (12128): Elaborating entity "ram" for hierarchy "ram:Ram1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 62
+Info (12128): Elaborating entity "SEL" for hierarchy "SEL:sel1" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 65
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/QueenU/ELEC 374/ELEC374CPU3000/output_files/CPU_G16.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 85 warnings
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Mon Mar 16 16:50:05 2026
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/QueenU/ELEC 374/ELEC374CPU3000/output_files/CPU_G16.map.smsg.
 
 

@@ -1,1 +1,11 @@
-Warning (10268): Verilog HDL information at divider.v(13): always construct contains both blocking and non-blocking assignments File: C:/Users/22qbn1/FPGA/ELEC374-CPUDesign/divider.v Line: 13
+Warning (10268): Verilog HDL information at CPU_G16_tb.v(63): always construct contains both blocking and non-blocking assignments File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 63
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "ADD" differs only in case from object "add" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "SUB" differs only in case from object "sub" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "MUL" differs only in case from object "mul" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "DIV" differs only in case from object "div" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "SHR" differs only in case from object "shr" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "SHRA" differs only in case from object "shra" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "SHL" differs only in case from object "shl" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "ROR" differs only in case from object "ror" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "ROL" differs only in case from object "rol" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
+Info (10281): Verilog HDL Declaration information at alu.v(4): object "NEG" differs only in case from object "neg" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
