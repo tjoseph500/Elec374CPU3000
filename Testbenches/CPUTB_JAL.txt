@@ -1,0 +1,120 @@
+// and data fix formatting only
+// path_tb.v file: <This is the filename>
+
+`timescale 1ns/10ps
+
+module CPU_G16_tb;
+
+    reg PCout, Zhighout, Zlowout, MDRout, HIout, LOout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout;
+    
+	 reg HIin, LOin, MARin, Zin, Zhighin, Zlowin, PCin, MDRin, IRin, Yin, OutPortin, ConIn;
+    
+	 reg Read, Write;
+	 
+	 reg ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, IncPC;
+    
+	 reg clock, stateClock;
+	 reg clear;
+	 
+	 reg [31:0] InportWire;
+	 
+    parameter Default     = 4'b0000,
+				  Preload	  = 4'b0001,
+              T0          = 4'b0010,
+              T1          = 4'b0011,
+              T2          = 4'b0100,
+              T3          = 4'b0101,
+				  T4          = 4'b0110;
+
+				  
+    reg [3:0] Present_state = Default;
+
+ CPU_G16 DUT(clock, clear, Read, Write, IncPC, HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout, HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, MARin, OutPortin, ConIn, Yin, IRin, ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, InportWire);
+
+    // Clock generation
+    initial begin
+        clock = 0;
+        forever #1 clock = ~clock;
+    end
+	 
+	 initial begin
+        stateClock = 0;
+        forever #50 stateClock = ~stateClock;
+    end
+
+    // FSM state transitions
+    always @(posedge stateClock) begin
+        case (Present_state)
+            Default     : Present_state = Preload;
+            Preload  	: Present_state = T0;
+            T0          : Present_state = T1;
+            T1          : Present_state = T2;
+            T2          : Present_state = T3;
+				T3          : Present_state = T4;
+
+        endcase
+    end
+
+    // Control signal assignments per state
+    always @(Present_state) begin
+        case (Present_state)
+
+            Default: begin
+					PCout <= 0; Zhighout <= 0; Zlowout <= 0; MDRout <= 0; 
+					HIout <= 0; LOout <= 0; InPortout <= 0; 
+					Gra <= 0; Grb <= 0; Grc <= 0; 
+					Rin <= 0; Rout <= 0; BAout <= 0; Cout <= 0;
+
+					HIin <= 0; LOin <= 0; MARin <= 0; Zin <= 0; 
+					Zhighin <= 0; Zlowin <= 0; PCin <= 0; MDRin <= 0; 
+					IRin <= 0; Yin <= 0; OutPortin <= 0; ConIn <= 0;
+
+					Read <= 0; Write <= 0;
+
+					ADD <= 0; SUB <= 0; MUL <= 0; DIV <= 0; 
+					SHR <= 0; SHRA <= 0; SHL <= 0; ROR <= 0; 
+					ROL <= 0; AND <= 0; OR <= 0; NEG <= 0; 
+					NOT <= 0; IncPC <= 0;
+
+					clear <= 0;
+					
+					InportWire <=32'h00000000;
+            end
+
+            Preload: begin
+					DUT.Ram1.RAM1[16] = 32'b01000010011000000000000000000000;
+					DUT.PC.q = 32'h00000010;
+					DUT.R12.q = 32'h000000FF;
+					DUT.R4.q = 32'h00000001;
+            end
+
+            T0: begin
+                PCout <= 1; MARin <= 1; IncPC <= 1; Zin <= 1;
+					 #15 PCout <= 0; IncPC <= 0; MARin<=0; Zin<=0;
+            end
+
+            T1: begin
+                Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
+					 #15 Zlowout <= 0; Read<=0; PCin <= 0; MDRin <= 0;
+            end
+
+            T2: begin
+                MDRout <= 1; IRin <= 1;
+					 #15 MDRout <= 0; IRin <= 0;
+
+            end
+				
+				T3: begin
+                PCout <= 1; Grb <= 1; Rin <= 1; //Might Change in Phase 3 to be forced R12?
+					 #15 PCout <= 0; Grb <= 0; Rin <= 0;
+            end
+
+            T4: begin
+                Gra <= 1; Rout <= 1; PCin<=1;
+					 #15 Gra <= 0; Rout <= 0; PCin<=0;
+            end
+				
+        endcase
+    end
+
+endmodule
