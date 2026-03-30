@@ -1,0 +1,11 @@
+// IncPC 
+module IncPC(PC, ResultPC);
+
+input [31:0] PC;
+output [31:0] ResultPC;
+
+integer i = 1'd1;
+
+adder adderPC(PC, i, ResultPC);
+
+endmodule

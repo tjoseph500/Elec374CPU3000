@@ -7,6 +7,15 @@ input Read, Write, clk;
 
 reg [31:0] RAM1 [0:511];
 
+integer i;
+
+initial begin
+    for (i = 0; i < 512; i = i + 1)
+	 begin
+        RAM1[i] = 32'd0;
+    end
+end
+
 always @(posedge clk)
 begin
     if (Write)
@@ -14,6 +23,8 @@ begin
 
     if (Read)
         Dataout <= RAM1[Address];
+	 else if (Read==0)
+		Dataout <= 32'hzzzzzzzz;
 end
 
 endmodule

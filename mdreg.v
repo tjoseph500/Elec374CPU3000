@@ -9,7 +9,7 @@ module mdr
 	reg [31:0] mdrIn;
 	initial mdrIn = 32'h0;
 	
-	always @(posedge clock)begin
+	always @(*)begin
 		
 		if (read==1)
 		begin

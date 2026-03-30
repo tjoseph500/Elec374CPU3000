@@ -16,9 +16,10 @@ module con_ff (
         .condition_code(condition_code),
         .CON(current_CON)
     );
-    
+    initial CON_FF_out = 1'b0;
     // Flip-flop to capture CON when enabled
-    always @(posedge clk or posedge reset ) begin
+    always @(*)
+	 begin
 	 //When reset the Con_FF_out gets reset to 0
         if (reset) begin
             CON_FF_out <= 1'b0;

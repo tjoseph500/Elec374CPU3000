@@ -1,4 +1,4 @@
-Warning (10268): Verilog HDL information at CPU_G16_tb.v(63): always construct contains both blocking and non-blocking assignments File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 63
+Warning (10268): Verilog HDL information at CPU_G16_tb.v(59): always construct contains both blocking and non-blocking assignments File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v Line: 59
 Info (10281): Verilog HDL Declaration information at alu.v(4): object "ADD" differs only in case from object "add" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
 Info (10281): Verilog HDL Declaration information at alu.v(4): object "SUB" differs only in case from object "sub" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4
 Info (10281): Verilog HDL Declaration information at alu.v(4): object "MUL" differs only in case from object "mul" in the same scope File: C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v Line: 4

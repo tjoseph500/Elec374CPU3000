@@ -1,7 +1,7 @@
 module ALU(
     input wire clear, clock,
 
-    input wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT,
+    input wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, IncPC,
 
     input wire [31:0] ALUin, 
     input wire [31:0] BusMuxOut,
@@ -22,6 +22,8 @@ wire [31:0] ror_out, rol_out;
 
 wire [31:0] and_out, or_out;
 wire [31:0] neg_out, not_out;
+
+wire [31:0] pc_out;
 
 
 // =========================
@@ -46,12 +48,13 @@ OR_Operation or_OP (ALUin, BusMuxOut, or_out);
 twoCom neg  (BusMuxOut, neg_out);
 oneCom not_OP  (BusMuxOut, not_out);
 
+IncPC incrPc(BusMuxOut, pc_out);
 
 // =========================
 // Output Selection
 // =========================
 
-always @(posedge clock) begin
+always @(*) begin
     if (clear)
         ALUout = 64'd0;
 
@@ -93,7 +96,10 @@ always @(posedge clock) begin
 
     else if (NOT)
         ALUout = {32'd0, not_out};
-
+		  
+	 else if (IncPC)
+	     ALUout = {32'd0, pc_out};
+		  
     else
         ALUout = 64'd0;
 end
