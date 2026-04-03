@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU_G16
-Mon Mar 30 17:08:11 2026
+Thu Apr 02 20:53:08 2026
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Mar 30 17:08:11 2026       ;
+; Analysis & Elaboration Status ; Successful - Thu Apr 02 20:53:08 2026       ;
 ; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                 ; CPU_G16                                     ;
 ; Top-level Entity Name         ; CPU_G16                                     ;
@@ -507,7 +507,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; st5            ; 1001100 ; Unsigned Binary                   ;
 ; st6            ; 1001101 ; Unsigned Binary                   ;
 ; st7            ; 1001110 ; Unsigned Binary                   ;
-; subi3          ; 1001111 ; Unsigned Binary                   ;
+; shri3          ; 1001111 ; Unsigned Binary                   ;
+; shri4          ; 1010000 ; Unsigned Binary                   ;
+; shri5          ; 1010001 ; Unsigned Binary                   ;
+; shli3          ; 1010010 ; Unsigned Binary                   ;
+; shli4          ; 1010011 ; Unsigned Binary                   ;
+; shli5          ; 1010100 ; Unsigned Binary                   ;
+; rori3          ; 1010101 ; Unsigned Binary                   ;
+; rori4          ; 1010110 ; Unsigned Binary                   ;
+; rori5          ; 1010111 ; Unsigned Binary                   ;
+; roli3          ; 1011000 ; Unsigned Binary                   ;
+; roli4          ; 1011001 ; Unsigned Binary                   ;
+; roli5          ; 1011010 ; Unsigned Binary                   ;
 +----------------+---------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -644,7 +655,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Mon Mar 30 17:07:45 2026
+    Info: Processing started: Thu Apr 02 20:52:50 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU_G16 -c CPU_G16 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -924,102 +935,102 @@ Warning (10240): Verilog HDL Always Construct warning at con_ff.v(24): inferring
 Info (10041): Inferred latch for "CON_FF_out" at con_ff.v(24) File: C:/QueenU/ELEC 374/ELEC374CPU3000/con_ff.v Line: 24
 Info (12128): Elaborating entity "con_logic" for hierarchy "con_ff:ConLogic|con_logic:con_check" File: C:/QueenU/ELEC 374/ELEC374CPU3000/con_ff.v Line: 18
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:cu" File: C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v Line: 96
-Info (10264): Verilog HDL Case Statement information at control_unit.v(110): all case item expressions in this case statement are onehot File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 110
-Warning (10235): Verilog HDL Always Construct warning at control_unit.v(608): variable "con_ff" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 608
-Warning (10270): Verilog HDL Case Statement warning at control_unit.v(277): incomplete case statement has no default case item File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 277
-Info (10264): Verilog HDL Case Statement information at control_unit.v(277): all case item expressions in this case statement are onehot File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 277
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "PCout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Zhighout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Zlowout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "MDRout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "HIout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "LOout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "InPortout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Gra", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Grb", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Grc", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Rin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Rout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "BAout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Cout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "HIin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "LOin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "MARin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Zin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Zhighin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Zlowin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "PCin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "MDRin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "IRin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Yin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "OutPortin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "ConIn", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Read", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "Write", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "ADD", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "SUB", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "MUL", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "DIV", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "SHR", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "SHRA", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "SHL", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "ROR", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "ROL", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "AND", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "OR", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "NEG", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "NOT", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "IncPC", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Warning (10240): Verilog HDL Always Construct warning at control_unit.v(275): inferring latch(es) for variable "clear", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "clear" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "IncPC" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "NOT" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "NEG" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "OR" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "AND" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "ROL" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "ROR" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "SHL" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "SHRA" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "SHR" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "DIV" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "MUL" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "SUB" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "ADD" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Write" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Read" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "ConIn" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "OutPortin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Yin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "IRin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "MDRin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "PCin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Zlowin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Zhighin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Zin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "MARin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "LOin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "HIin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Cout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "BAout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Rout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Rin" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Grc" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Grb" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Gra" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "InPortout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "LOout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "HIout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "MDRout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Zlowout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "Zhighout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
-Info (10041): Inferred latch for "PCout" at control_unit.v(275) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 275
+Info (10264): Verilog HDL Case Statement information at control_unit.v(121): all case item expressions in this case statement are onehot File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 121
+Warning (10235): Verilog HDL Always Construct warning at control_unit.v(622): variable "con_ff" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 622
+Warning (10270): Verilog HDL Case Statement warning at control_unit.v(291): incomplete case statement has no default case item File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 291
+Info (10264): Verilog HDL Case Statement information at control_unit.v(291): all case item expressions in this case statement are onehot File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 291
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "PCout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Zhighout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Zlowout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "MDRout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "HIout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "LOout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "InPortout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Gra", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Grb", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Grc", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Rin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Rout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "BAout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Cout", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "HIin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "LOin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "MARin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Zin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Zhighin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Zlowin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "PCin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "MDRin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "IRin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Yin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "OutPortin", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "ConIn", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Read", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "Write", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "ADD", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "SUB", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "MUL", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "DIV", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "SHR", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "SHRA", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "SHL", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "ROR", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "ROL", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "AND", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "OR", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "NEG", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "NOT", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "IncPC", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Warning (10240): Verilog HDL Always Construct warning at control_unit.v(289): inferring latch(es) for variable "clear", which holds its previous value in one or more paths through the always construct File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "clear" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "IncPC" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "NOT" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "NEG" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "OR" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "AND" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "ROL" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "ROR" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "SHL" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "SHRA" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "SHR" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "DIV" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "MUL" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "SUB" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "ADD" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Write" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Read" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "ConIn" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "OutPortin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Yin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "IRin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "MDRin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "PCin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Zlowin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Zhighin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Zin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "MARin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "LOin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "HIin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Cout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "BAout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Rout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Rin" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Grc" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Grb" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Gra" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "InPortout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "LOout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "HIout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "MDRout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Zlowout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "Zhighout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
+Info (10041): Inferred latch for "PCout" at control_unit.v(289) File: C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v Line: 289
 Info (144001): Generated suppressed messages file C:/QueenU/ELEC 374/ELEC374CPU3000/output_files/CPU_G16.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 66 warnings
     Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Mon Mar 30 17:08:11 2026
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Processing ended: Thu Apr 02 20:53:08 2026
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:34
 
 
 +--------------------------------------------+

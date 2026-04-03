@@ -94,7 +94,18 @@ module control_unit(
 				  st5          	= 7'b1001100,
 				  st6          	= 7'b1001101,
 				  st7          	= 7'b1001110,
-				  subi3          	= 7'b1001111;
+				  shri3          	= 7'b1001111,
+				  shri4          	= 7'b1010000,
+				  shri5          	= 7'b1010001,
+				  shli3          	= 7'b1010010,				  
+				  shli4          	= 7'b1010011,
+				  shli5          	= 7'b1010100,
+				  rori3          	= 7'b1010101,				  
+				  rori4          	= 7'b1010110,
+				  rori5          	= 7'b1010111,
+				  roli3          	= 7'b1011000,				  
+				  roli4          	= 7'b1011001,
+				  roli5          	= 7'b1011010;
 
 
 	reg [6:0] present_state = reset_state;
@@ -124,7 +135,6 @@ always @(posedge clock, posedge reset) // finite state machine; if clock or rese
 								 5'b00000: 	present_state = add3;
 								 5'b01001: 	present_state = addi3;
 								 5'b00001: 	present_state = sub3;
-								 5'b11111: 	present_state = subi3;
 								 5'b01101: 	present_state = mul3;
 								 5'b01100: 	present_state = div3;
 								 5'b00100: 	present_state = shr3;
@@ -142,6 +152,10 @@ always @(posedge clock, posedge reset) // finite state machine; if clock or rese
 								 5'b11001: 	present_state = mflo3;
 								 5'b10110: 	present_state = in3;
 								 5'b10111: 	present_state = out3;
+								 5'b11100: 	present_state = shri3;
+								 5'b11101: 	present_state = shli3;
+								 5'b11110: 	present_state = rori3;
+								 5'b11111: 	present_state = roli3;
 								endcase
 							end
 
@@ -643,6 +657,59 @@ always @(posedge clock, posedge reset) // finite state machine; if clock or rese
 				 InPortout <= 1; Gra <= 1; Rout <= 1; BAout <= 1;
 				 #15 InPortout <= 0; Gra <= 0; Rout <= 0;  BAout <= 0;
          end
+			
+			shri3: begin
+				Grb <= 1; Yin <= 1; Rout<=1; BAout<=1;
+				#15 Grb <= 0; Yin <= 0; Rout<=1;  BAout<=0;
+			end
+			shri4: begin
+				Cout <= 1; SHR <= 1; Zin <= 1;
+				#15 Cout <= 0; SHR <= 0; Zin <= 0;
+			end
+			shri5: begin
+				Zlowout <= 1; Gra <= 1; Rin<=1;
+				#15 Zlowout <= 0; Gra <= 0; Rin<=0;
+			end
+			
+			shli3: begin
+				Grb <= 1; Yin <= 1; Rout<=1; BAout<=1;
+				#15 Grb <= 0; Yin <= 0; Rout<=1;  BAout<=0;
+			end
+			shli4: begin
+				Cout <= 1; SHL <= 1; Zin <= 1;
+				#15 Cout <= 0; SHL <= 0; Zin <= 0;
+			end
+			shli5: begin
+				Zlowout <= 1; Gra <= 1; Rin<=1;
+				#15 Zlowout <= 0; Gra <= 0; Rin<=0;
+			end
+			
+			rori3: begin
+				Grb <= 1; Yin <= 1; Rout<=1; BAout<=1;
+				#15 Grb <= 0; Yin <= 0; Rout<=1;  BAout<=0;
+			end
+			rori4: begin
+				Cout <= 1; ROR <= 1; Zin <= 1;
+				#15 Cout <= 0; ROR <= 0; Zin <= 0;
+			end
+			rori5: begin
+				Zlowout <= 1; Gra <= 1; Rin<=1;
+				#15 Zlowout <= 0; Gra <= 0; Rin<=0;
+			end
+			
+			roli3: begin
+				Grb <= 1; Yin <= 1; Rout<=1; BAout<=1;
+				#15 Grb <= 0; Yin <= 0; Rout<=1;  BAout<=0;
+			end
+			roli4: begin
+				Cout <= 1; ROL <= 1; Zin <= 1;
+				#15 Cout <= 0; ROL <= 0; Zin <= 0;
+			end
+			roli5: begin
+				Zlowout <= 1; Gra <= 1; Rin<=1;
+				#15 Zlowout <= 0; Gra <= 0; Rin<=0;
+			end
+			
 		endcase
 	end
 

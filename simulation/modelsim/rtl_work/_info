@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/QueenU/ELEC 374/ELEC374CPU3000/simulation/modelsim
 vadder
-Z1 !s110 1774904929
+Z1 !s110 1775177620
 !i10b 1
 !s100 k6QU3c`Vn9kbF7`oVNM0B2
 I4kLS6Ii2fWJeQ4:_^AoO@3
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1774904929.000000
+Z5 !s108 1775177620.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/adder.v|
 !i113 1
@@ -31,7 +31,7 @@ Z6 o-vlog01compat -work work
 Z7 !s92 -vlog01compat -work work {+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000}
 Z8 tCvgOpt 0
 vALU
-!s110 1774904927
+Z9 !s110 1775177619
 !i10b 1
 !s100 DJ64HAf9:oK^:BZM@K0kg1
 I<@JW35^ZeNM]HCHd;37o_2
@@ -45,7 +45,7 @@ R4
 r1
 !s85 0
 31
-!s108 1774904927.000000
+Z10 !s108 1775177619.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v|
 !i113 1
@@ -54,7 +54,7 @@ R7
 R8
 n@a@l@u
 vAND_Operation
-R1
+R9
 !i10b 1
 !s100 DN[^Yi]KEoV?Vg=do^QM=0
 IDLBaCJinW3QKDb^82R]ad2
@@ -68,7 +68,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/and.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/and.v|
 !i113 1
@@ -77,7 +77,7 @@ R7
 R8
 n@a@n@d_@operation
 vbooth_multiplier
-Z9 !s110 1774904930
+R1
 !i10b 1
 !s100 <3n_I8<PfVf7PGh31^nKH3
 IBH5mKV9eGJKJaP7z;XdfA2
@@ -91,7 +91,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1774904930.000000
+R5
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/multiplier.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/multiplier.v|
 !i113 1
@@ -99,7 +99,7 @@ R6
 R7
 R8
 vBus
-Z11 !s110 1774904928
+R9
 !i10b 1
 !s100 debAGLGamV9JiB7RiK2fI0
 IAAGHSRaC^T:QoFX<B_fI@1
@@ -113,7 +113,7 @@ R4
 r1
 !s85 0
 31
-Z12 !s108 1774904928.000000
+R10
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/bus.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/bus.v|
 !i113 1
@@ -122,7 +122,7 @@ R7
 R8
 n@bus
 vcmodule
-Z13 !s110 1774904931
+Z11 !s110 1775177622
 !i10b 1
 !s100 85VLZLR90:=UCbI?DRN4V2
 I8Q2YG06B<HAYnA]4`@]lG3
@@ -136,7 +136,7 @@ R4
 r1
 !s85 0
 31
-Z14 !s108 1774904931.000000
+Z12 !s108 1775177622.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/cmodule.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/cmodule.v|
 !i113 1
@@ -144,7 +144,7 @@ R6
 R7
 R8
 vcon_ff
-R13
+Z13 !s110 1775177621
 !i10b 1
 !s100 hmIADHd]adl>EjHmCbEZ]1
 I@H0k>]KMQam>HeP::c;5W1
@@ -158,7 +158,7 @@ R4
 r1
 !s85 0
 31
-R14
+Z14 !s108 1775177621.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/con_ff.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/con_ff.v|
 !i113 1
@@ -166,7 +166,7 @@ R6
 R7
 R8
 vcon_logic
-R13
+R11
 !i10b 1
 !s100 z@TM@]b8`m7gU_D9ib[ZE1
 IzJAcZYZ2NJA[VQS55lc]02
@@ -180,7 +180,7 @@ R4
 r1
 !s85 0
 31
-R14
+R12
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/con_logic.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/con_logic.v|
 !i113 1
@@ -188,13 +188,13 @@ R6
 R7
 R8
 vcontrol_unit
-Z15 !s110 1774904932
+Z15 !s110 1775177623
 !i10b 1
-!s100 jgdC8`Co2onn]]90hK8WD2
-Iif2fz@WTUfD46;Ui6ej[f1
+!s100 XIX3Uc5hLHjYInG]?D0hO1
+I^9j?4A7574d<]aiNf?C?j1
 R2
 R0
-w1774904864
+w1775177569
 8C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v
 FC:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v
 L0 2
@@ -202,7 +202,7 @@ R4
 r1
 !s85 0
 31
-Z16 !s108 1774904932.000000
+Z16 !s108 1775177623.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v|
 !i113 1
@@ -210,7 +210,7 @@ R6
 R7
 R8
 vCPU_G16
-!s110 1774904922
+R9
 !i10b 1
 !s100 79JgdSg7A=K?HA2>a<=ML2
 IB36:V;nn6bk7CEa;zW1_T0
@@ -224,7 +224,7 @@ R4
 r1
 !s85 0
 31
-Z17 !s108 1774904921.000000
+Z17 !s108 1775177618.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v|
 !i113 1
@@ -256,7 +256,7 @@ R7
 R8
 n@c@p@u_@g16_tb
 vdivider
-R9
+R1
 !i10b 1
 !s100 hDL_3zA0`Ln<9aI:WBeOM3
 I[3eUX0moFiAnaMlMK=GgK0
@@ -270,7 +270,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v|
 !i113 1
@@ -278,7 +278,7 @@ R6
 R7
 R8
 vIncPC
-R13
+R11
 !i10b 1
 !s100 `ob^_UaFb_X]Af3bm`N<T2
 Ie7n3haU;E?F;<09dV;9nX3
@@ -292,7 +292,7 @@ R4
 r1
 !s85 0
 31
-R14
+R12
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/IncPC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/IncPC.v|
 !i113 1
@@ -301,7 +301,7 @@ R7
 R8
 n@inc@p@c
 vinport
-R13
+R11
 !i10b 1
 !s100 zUK=3dRCJjJjB<ASHX`Qd0
 IILng4deReLc6Um[G7SjAh0
@@ -315,7 +315,7 @@ R4
 r1
 !s85 0
 31
-R14
+R12
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/inport.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/inport.v|
 !i113 1
@@ -323,7 +323,7 @@ R6
 R7
 R8
 vmar
-R15
+R11
 !i10b 1
 !s100 aK;[^XNjJPRlEnzC3IzmP1
 IOTBI@=P8=z>9:mokGf`[N0
@@ -337,7 +337,7 @@ R4
 r1
 !s85 0
 31
-R14
+R12
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/mar.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/mar.v|
 !i113 1
@@ -345,7 +345,7 @@ R6
 R7
 R8
 vmdr
-R11
+R9
 !i10b 1
 !s100 GfcZndc8jjolOMeS?ni`F0
 I58V]T4_iCWbNE?X[9KGS;1
@@ -359,7 +359,7 @@ R4
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/mdreg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/mdreg.v|
 !i113 1
@@ -404,7 +404,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/or.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/or.v|
 !i113 1
@@ -413,7 +413,7 @@ R7
 R8
 n@o@r_@operation
 vram
-R9
+R13
 !i10b 1
 !s100 eLS^_0bb;Ocn0V6<X;OI]1
 IPY2bzWnNYOl=f2z5bBB^N1
@@ -427,7 +427,7 @@ R4
 r1
 !s85 0
 31
-R10
+R14
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/ram.v|
 !i113 1
@@ -435,7 +435,7 @@ R6
 R7
 R8
 vregister
-R11
+R9
 !i10b 1
 !s100 Dmdb<a[kLzA][[ehOiE=S1
 IVl;hPKJ6zV9LJeOXD2z7O0
@@ -449,7 +449,7 @@ R4
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/register.v|
 !i113 1
@@ -471,7 +471,7 @@ R4
 r1
 !s85 0
 31
-R10
+R14
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/register0.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/register0.v|
 !i113 1
@@ -479,7 +479,7 @@ R6
 R7
 R8
 vregister64
-R11
+R9
 !i10b 1
 !s100 IREi5d^YHPAlEOS0;^zSg1
 I0F70KLDUYlC8zj@CUFLQ00
@@ -493,7 +493,7 @@ R4
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/register64.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/register64.v|
 !i113 1
@@ -501,7 +501,7 @@ R6
 R7
 R8
 vrotate_left
-Z18 !s110 1774904921
+Z18 !s110 1775177618
 !i10b 1
 !s100 ek[KkCUSMzdB0emLNDnIU1
 IY@IDRkUXNhh5^]eoYI9=]3
@@ -545,7 +545,7 @@ R6
 R7
 R8
 vSEL
-R9
+R13
 !i10b 1
 !s100 807zQ[[Y:XOcL`f<PY2WN3
 Im=9:f42M;UOY;GnjdPo^72
@@ -559,7 +559,7 @@ R4
 r1
 !s85 0
 31
-R10
+R14
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/SEL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/SEL.v|
 !i113 1
@@ -568,7 +568,7 @@ R7
 R8
 n@s@e@l
 vshiftLeft
-R9
+R13
 !i10b 1
 !s100 H4OUiDhC;TVJA>MbzzFlH1
 I7NzXF=W@WX1@W[HaBU5;=3
@@ -582,7 +582,7 @@ R4
 r1
 !s85 0
 31
-R10
+R14
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v|
 !i113 1
@@ -591,7 +591,7 @@ R7
 R8
 nshift@left
 vshiftRight
-R9
+R13
 !i10b 1
 !s100 IMfKUgb@4SK?G6DO?]zA52
 IK=2zJfX]d1f4SgXzM=k@=0
@@ -605,7 +605,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v|
 !i113 1
@@ -614,7 +614,7 @@ R7
 R8
 nshift@right
 vshiftRightA
-R18
+!s110 1775177617
 !i10b 1
 !s100 jK;zKMzO<9BG1ZUU9fHgb1
 I7UbBU`2Fn1?6fY0S0aMlg0
@@ -628,7 +628,7 @@ R4
 r1
 !s85 0
 31
-R17
+!s108 1775177617.000000
 !s107 C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000|C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v|
 !i113 1
