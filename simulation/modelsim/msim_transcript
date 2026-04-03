@@ -12,299 +12,309 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:41 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRightA.v 
 # -- Compiling module shiftRightA
 # 
 # Top level modules:
 # 	shiftRightA
-# End time: 02:08:09 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:41 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:41 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_right.v 
 # -- Compiling module rotate_right
 # 
 # Top level modules:
 # 	rotate_right
-# End time: 02:08:09 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:41 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:41 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/rotate_left.v 
 # -- Compiling module rotate_left
 # 
 # Top level modules:
 # 	rotate_left
-# End time: 02:08:09 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:41 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:41 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16.v 
 # -- Compiling module CPU_G16
 # 
 # Top level modules:
 # 	CPU_G16
-# End time: 02:08:09 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:42 on Mar 30,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:47 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/alu.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 02:08:09 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:47 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/register.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:48 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/register.v 
 # -- Compiling module register
 # 
 # Top level modules:
 # 	register
-# End time: 02:08:09 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:48 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/mdreg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:09 on Mar 30,2026
+# Start time: 17:08:48 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/mdreg.v 
 # -- Compiling module mdr
 # 
 # Top level modules:
 # 	mdr
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:01
+# End time: 17:08:48 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:48 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/bus.v 
 # -- Compiling module Bus
 # 
 # Top level modules:
 # 	Bus
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:48 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/register64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:48 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/register64.v 
 # -- Compiling module register64
 # 
 # Top level modules:
 # 	register64
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:48 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/and.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:49 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/and.v 
 # -- Compiling module AND_Operation
 # 
 # Top level modules:
 # 	AND_Operation
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:49 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/or.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:49 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/or.v 
 # -- Compiling module OR_Operation
 # 
 # Top level modules:
 # 	OR_Operation
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:49 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/oneCom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:49 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/oneCom.v 
 # -- Compiling module oneCom
 # 
 # Top level modules:
 # 	oneCom
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:49 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:49 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:49 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/twoCom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:49 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/twoCom.v 
 # -- Compiling module twoCom
 # 
 # Top level modules:
 # 	twoCom
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:49 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/subtract.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:49 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/subtract.v 
 # -- Compiling module subtract
 # 
 # Top level modules:
 # 	subtract
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:49 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/multiplier.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/multiplier.v 
 # -- Compiling module booth_multiplier
 # 
 # Top level modules:
 # 	booth_multiplier
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:50 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/divider.v 
 # -- Compiling module divider
 # 
 # Top level modules:
 # 	divider
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:50 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:10 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/shiftRight.v 
 # -- Compiling module shiftRight
 # 
 # Top level modules:
 # 	shiftRight
-# End time: 02:08:10 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:50 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/shiftLeft.v 
 # -- Compiling module shiftLeft
 # 
 # Top level modules:
 # 	shiftLeft
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:50 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:50 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/SEL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/SEL.v 
 # -- Compiling module SEL
 # 
 # Top level modules:
 # 	SEL
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:50 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/register0.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:50 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/register0.v 
 # -- Compiling module register0
 # 
 # Top level modules:
 # 	register0
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:51 on Mar 30,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/con_ff.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:51 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/con_ff.v 
 # -- Compiling module con_ff
 # 
 # Top level modules:
 # 	con_ff
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:51 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/con_logic.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:51 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/con_logic.v 
 # -- Compiling module con_logic
 # 
 # Top level modules:
 # 	con_logic
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:51 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/inport.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:51 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/inport.v 
 # -- Compiling module inport
 # 
 # Top level modules:
 # 	inport
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:51 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/cmodule.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:51 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/cmodule.v 
 # -- Compiling module cmodule
 # 
 # Top level modules:
 # 	cmodule
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:51 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/IncPC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:51 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/IncPC.v 
 # -- Compiling module IncPC
 # 
 # Top level modules:
 # 	IncPC
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:51 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/mar.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:51 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/mar.v 
 # -- Compiling module mar
 # 
 # Top level modules:
 # 	mar
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:52 on Mar 30,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:52 on Mar 30,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 17:08:52 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:52 on Mar 30,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueenU/ELEC 374/ELEC374CPU3000" C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v 
 # -- Compiling module CPU_G16_tb
 # 
 # Top level modules:
 # 	CPU_G16_tb
-# End time: 02:08:11 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 17:08:52 on Mar 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  CPU_G16_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" CPU_G16_tb 
-# Start time: 02:08:11 on Mar 30,2026
+# Start time: 17:08:52 on Mar 30,2026
 # Loading work.CPU_G16_tb
 # Loading work.CPU_G16
 # Loading work.register0
@@ -334,6 +344,7 @@
 # Loading work.inport
 # Loading work.con_ff
 # Loading work.con_logic
+# Loading work.control_unit
 # 
 # add wave *
 # view structure
@@ -341,55 +352,39 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1500 ns
-quit -sim
-vlib work
-# End time: 02:08:23 on Mar 30,2026, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-vlog *.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:08:23 on Mar 30,2026
-# vlog -reportprogress 300 *.v 
-# ** Error: (vlog-7) Failed to open design unit file "*.v" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 02:08:23 on Mar 30,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
-vsim CPU_G16_tb
-# vsim CPU_G16_tb 
-# Start time: 02:08:24 on Mar 30,2026
-# Loading work.CPU_G16_tb
-# Loading work.CPU_G16
-# Loading work.register0
-# Loading work.register
-# Loading work.ALU
-# Loading work.adder
-# Loading work.subtract
-# Loading work.twoCom
-# Loading work.oneCom
-# Loading work.booth_multiplier
-# Loading work.divider
-# Loading work.shiftRight
-# Loading work.shiftRightA
-# Loading work.shiftLeft
-# Loading work.rotate_right
-# Loading work.rotate_left
-# Loading work.AND_Operation
-# Loading work.OR_Operation
-# Loading work.IncPC
-# Loading work.register64
-# Loading work.Bus
-# Loading work.mdr
-# Loading work.mar
-# Loading work.cmodule
-# Loading work.ram
-# Loading work.SEL
-# Loading work.inport
-# Loading work.con_ff
-# Loading work.con_logic
-
-add wave -r *
-add wave CPU_G16_tb/DUT/Ram1/RAM1
-run 1500ns
-# End time: 02:08:49 on Mar 30,2026, Elapsed time: 0:00:25
+add wave -position end  sim:/CPU_G16_tb/DUT/Ram1/RAM1
+restart
+run 45000ns
+restart
+add wave -position end  sim:/CPU_G16_tb/DUT/R0/r0/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R1/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R2/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R3/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R4/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R5/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R6/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R7/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R8/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R9/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R10/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R11/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R12/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R13/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R14/q
+add wave -position end  sim:/CPU_G16_tb/DUT/R15/q
+add wave -position end  sim:/CPU_G16_tb/DUT/HI/q
+add wave -position end  sim:/CPU_G16_tb/DUT/LO/q
+add wave -position end  sim:/CPU_G16_tb/DUT/PC/q
+add wave -position end  sim:/CPU_G16_tb/DUT/Ram1/RAM1[137]
+add wave -position end  sim:/CPU_G16_tb/DUT/Ram1/RAM1[163]
+restart
+run 45000 ns
+restart
+add wave -position end  sim:/CPU_G16_tb/DUT/ir/q
+add wave -position end  sim:/CPU_G16_tb/DUT/mdr1/mdr_1/q
+add wave -position end  sim:/CPU_G16_tb/DUT/mar1/q
+run 40000ns
+restart
+run 32000ns
+# End time: 00:33:53 on Mar 31,2026, Elapsed time: 7:25:01
 # Errors: 0, Warnings: 0

@@ -1,14 +1,4 @@
-module CPU_G16(
-	input wire clock, clear, Read, Write, IncPC,
-
-	input wire HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout,
-			
-	input wire HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, MARin, OutPortin, ConIn, Yin, IRin,
-
-	input wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT,
-	
-	input wire [31:0] InportWire
-);
+module CPU_G16(input wire clock, stateClock, reset, stop);
 
    wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, BusMuxIn_R4, BusMuxIn_R5, BusMuxIn_R6, BusMuxIn_R7, BusMuxIn_R8, BusMuxIn_R9, BusMuxIn_R10, BusMuxIn_R11, BusMuxIn_R12, BusMuxIn_R13, BusMuxIn_R14, BusMuxIn_R15, BusMuxIn_HI, BusMuxIn_LO, BusMuxIn_Zhigh, BusMuxIn_Zlow, BusMuxIn_PC, BusMuxIn_MDR, BusMuxIn_InPort, C_sign_extended;
 	
@@ -26,7 +16,17 @@ module CPU_G16(
 
 	wire [31:0] OutportWire;
 	
-	wire CON_FF_Out; //Replace With PCin in Phase 3
+	wire [31:0] InportWire;
+	
+	wire CON_FF_Out;
+	
+	wire PCout, Zhighout, Zlowout, MDRout, HIout, LOout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout;
+	
+ 	wire HIin, LOin, MARin, Zin, Zhighin, Zlowin, PCin, MDRin, IRin, Yin, OutPortin, ConIn;
+	
+	wire Read, Write, clear;
+	 
+	wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, IncPC;
 	
 	//Registers
 	register0 R0(clear, clock, R0in, BusMuxOut, BusMuxIn_R0, BAout);
@@ -91,5 +91,8 @@ module CPU_G16(
 	
 	//ConFF
 	con_ff ConLogic(clock, clear, ConIn, BusMuxOut, IR_Output[22:19], CON_FF_Out);
+	
+	//Control Umit
+	control_unit cu(PCout, Zhighout, Zlowout, MDRout, HIout, LOout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout, HIin, LOin, MARin, Zin, Zhighin, Zlowin, PCin, MDRin, IRin, Yin, OutPortin, ConIn, Read, Write, clear, ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, IncPC, stateClock, reset, stop, CON_FF_Out, IR_Output);
 
 endmodule

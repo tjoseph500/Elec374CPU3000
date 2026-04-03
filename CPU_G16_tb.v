@@ -4,112 +4,77 @@
 `timescale 1ns/10ps
 
 module CPU_G16_tb;
-
-    reg PCout, Zhighout, Zlowout, MDRout, HIout, LOout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout;
     
-	 reg HIin, LOin, MARin, Zin, Zhighin, Zlowin, PCin, MDRin, IRin, Yin, OutPortin, ConIn;
-    
-	 reg Read, Write;
+	reg clock, stateClock, reset, stop;
+
+	CPU_G16 DUT(clock, stateClock, reset, stop);
+
+   // Clock generation
+   initial begin
+       clock = 0;
+       forever #1 clock = ~clock;
+   end
 	 
-	 reg ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, IncPC;
-    
-	 reg clock, stateClock;
-	 reg clear;
-	 
-	 reg [31:0] InportWire;
-	 
-    parameter Default     = 4'b0000,
-				  Preload	  = 4'b0001,
-              T0          = 4'b0010,
-              T1          = 4'b0011,
-              T2          = 4'b0100,
-              T3          = 4'b0101,
-				  T4          = 4'b0110;
-
-				  
-    reg [3:0] Present_state = Default;
-
- CPU_G16 DUT(clock, clear, Read, Write, IncPC, HIout, LOout, Zhighout, Zlowout, PCout, MDRout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout, HIin, LOin, Zin, Zhighin, Zlowin, PCin, MDRin, MARin, OutPortin, ConIn, Yin, IRin, ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, InportWire);
-
-    // Clock generation
-    initial begin
-        clock = 0;
-        forever #1 clock = ~clock;
-    end
-	 
-	 initial begin
-        stateClock = 0;
-        forever #50 stateClock = ~stateClock;
-    end
-
-    // FSM state transitions
-    always @(posedge stateClock) begin
-        case (Present_state)
-            Default     : Present_state = Preload;
-            Preload  	: Present_state = T0;
-            T0          : Present_state = T1;
-            T1          : Present_state = T2;
-            T2          : Present_state = T3;
-				T3          : Present_state = T4;
-
-        endcase
-    end
-
-    // Control signal assignments per state
-    always @(Present_state) begin
-        case (Present_state)
-
-            Default: begin
-					PCout <= 0; Zhighout <= 0; Zlowout <= 0; MDRout <= 0; 
-					HIout <= 0; LOout <= 0; InPortout <= 0; 
-					Gra <= 0; Grb <= 0; Grc <= 0; 
-					Rin <= 0; Rout <= 0; BAout <= 0; Cout <= 0;
-
-					HIin <= 0; LOin <= 0; MARin <= 0; Zin <= 0; 
-					Zhighin <= 0; Zlowin <= 0; PCin <= 0; MDRin <= 0; 
-					IRin <= 0; Yin <= 0; OutPortin <= 0; ConIn <= 0;
-
-					Read <= 0; Write <= 0;
-
-					ADD <= 0; SUB <= 0; MUL <= 0; DIV <= 0; 
-					SHR <= 0; SHRA <= 0; SHL <= 0; ROR <= 0; 
-					ROL <= 0; AND <= 0; OR <= 0; NEG <= 0; 
-					NOT <= 0; IncPC <= 0;
-
-					clear <= 0;
-					
-					InportWire <=32'h00000000;
-            end
-
-            Preload: begin
-					DUT.Ram1.RAM1[0] = 32'b01000010100000000000000000000000;
-					DUT.PC.q = 32'h00004000;
-					DUT.R5.q = 32'h000A000E;
-					InportWire <=32'h0000FFFF;
-            end
-
-            T0: begin
-                PCout <= 1; MARin <= 1; IncPC <= 1; Zin <= 1;
-					 #15 PCout <= 0; IncPC <= 0; MARin<=0; Zin<=0;
-            end
-
-            T1: begin
-                Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
-					 #15 Zlowout <= 0; Read<=0; PCin <= 0; MDRin <= 0;
-            end
-
-            T2: begin
-                MDRout <= 1; IRin <= 1;
-					 #15 MDRout <= 0; IRin <= 0;
-
-            end
-				
-				T3: begin
-                InPortout <= 1; Gra <= 1; Rin <= 1;
-					 #15 InPortout <= 0; Gra <= 0; Rin <= 0;
-            end
-				
-        endcase
-    end
-
+	initial begin
+       stateClock = 0;
+       forever #50 stateClock = ~stateClock;
+   end
+	  
+	initial begin
+		DUT.Ram1.RAM1[0]= 32'b10001010100000000000000001000011;
+		DUT.Ram1.RAM1[1]= 32'b10001010101010000000000000000110;
+		DUT.Ram1.RAM1[2]= 32'b10000010000000000000000010001001;
+		DUT.Ram1.RAM1[3]= 32'b10001010001000000000000000000100;
+		DUT.Ram1.RAM1[4]= 32'b10000000001001111111111111111000;
+		DUT.Ram1.RAM1[5]= 32'b10001001000000000000000000000100;
+		DUT.Ram1.RAM1[6]= 32'b10001010100000000000000010000111;
+		DUT.Ram1.RAM1[7]= 32'b10101010100110000000000000000011;
+		DUT.Ram1.RAM1[8]= 32'b10001010101010000000000000000101;
+		DUT.Ram1.RAM1[9]= 32'b10000000101011111111111111111101;
+		DUT.Ram1.RAM1[10]= 32'b11010000000000000000000000000000;
+		DUT.Ram1.RAM1[11]= 32'b10101000100100000000000000000010;
+		DUT.Ram1.RAM1[12]= 32'b10001001101010000000000000000111;
+		DUT.Ram1.RAM1[13]= 32'b10001011100111111111111111111100;
+		DUT.Ram1.RAM1[14]= 32'b00000011101010010000000000000000;
+		DUT.Ram1.RAM1[15]= 32'b01001000100010000000000000000011;
+		DUT.Ram1.RAM1[16]= 32'b01110000100010000000000000000000;
+		DUT.Ram1.RAM1[17]= 32'b01111000100010000000000000000000;
+		DUT.Ram1.RAM1[18]= 32'b01010000100010000000000000001111;
+		DUT.Ram1.RAM1[19]= 32'b00111010000000010000000000000000;
+		DUT.Ram1.RAM1[20]= 32'b01011000101000000000000000000101;
+		DUT.Ram1.RAM1[21]= 32'b00101010000010010000000000000000;
+		DUT.Ram1.RAM1[22]= 32'b00100010101010010000000000000000;
+		DUT.Ram1.RAM1[23]= 32'b10010010100000000000000010100011;
+		DUT.Ram1.RAM1[24]= 32'b01000010100000010000000000000000;
+		DUT.Ram1.RAM1[25]= 32'b00011011100100000000000000000000;
+		DUT.Ram1.RAM1[26]= 32'b00010010001010000000000000000000;
+		DUT.Ram1.RAM1[27]= 32'b10010011101000000000000010001001;
+		DUT.Ram1.RAM1[28]= 32'b00001000001010111000000000000000;
+		DUT.Ram1.RAM1[29]= 32'b00110010001010010000000000000000;
+		DUT.Ram1.RAM1[30]= 32'b10001011100000000000000000000111;
+		DUT.Ram1.RAM1[31]= 32'b10001001100000000000000000011001;
+		DUT.Ram1.RAM1[32]= 32'b01101001101110000000000000000000;
+		DUT.Ram1.RAM1[33]= 32'b11000000100000000000000000000000;
+		DUT.Ram1.RAM1[34]= 32'b11001011000000000000000000000000;
+		DUT.Ram1.RAM1[35]= 32'b01100001101110000000000000000000;
+		DUT.Ram1.RAM1[36]= 32'b10001100001110000000000000000010;
+		DUT.Ram1.RAM1[37]= 32'b10001100100111111111111111111100;
+		DUT.Ram1.RAM1[38]= 32'b10001101001100000000000000000011;
+		DUT.Ram1.RAM1[39]= 32'b10001101100010000000000000000101;
+		DUT.Ram1.RAM1[40]= 32'b10011101011000000000000000000000;
+		DUT.Ram1.RAM1[41]= 32'b11011000000000000000000000000000;
+		DUT.Ram1.RAM1[178]= 32'b00000111010001010000000000000000;
+		DUT.Ram1.RAM1[179]= 32'b00001110110011011000000000000000;
+		DUT.Ram1.RAM1[180]= 32'b00001111011101101000000000000000;
+		DUT.Ram1.RAM1[181]= 32'b10100110000000000000000000000000;
+		
+		DUT.Ram1.RAM1[137]= 32'h000000A7;
+		DUT.Ram1.RAM1[163]= 32'h00000068;
+		
+		DUT.PC.q = 32'h0;
+		DUT.R5.q = 32'h0;
+		
+		reset=32'b0;
+		stop=32'b0;
+	end
 endmodule

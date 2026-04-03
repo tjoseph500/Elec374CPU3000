@@ -1,0 +1,68 @@
+module control_unit(
+
+	output wire PCout, Zhighout, Zlowout, MDRout, HIout, LOout, InPortout, Gra, Grb, Grc, Rin, Rout, BAout, Cout,
+	
+ 	output wire HIin, LOin, MARin, Zin, Zhighin, Zlowin, PCin, MDRin, IRin, Yin, OutPortin, ConIn,
+	
+	output wire Read, Write, Clear,
+	 
+	output wire ADD, SUB, MUL, DIV, SHR, SHRA, SHL, ROR, ROL, AND, OR, NEG, NOT, IncPC,
+    
+	input wire clock, stateClock, reset, stop, con_ff,
+	
+	input [31:0] IR
+	
+	);
+	 
+    parameter reset_state     = 6'b000000,
+				  fetch0	  			= 6'b000001,
+              fetch1          = 6'b000010,
+              fetch2          = 6'b000011,
+              and3          	= 6'b000100,
+              and4          	= 6'b000101,
+				  and5          	= 6'b000110;
+
+	reg [5:0] present_state = reset_state;
+	
+always @(posedge Clock, posedge Reset) // finite state machine; if clock or reset rising-edge
+	begin
+		if (Reset == 1’b1)
+		begin
+			present_state = reset_state;
+		end
+		else case (present_state)
+		begin
+			reset_state: present_state = fetch0;
+			fetch0: 		present_state = fetch1;
+			fetch1: 		present_state = fetch2;
+			fetch2: 		begin
+								case(IR[31:27])
+								 5’b00000: 	present_state = nop;
+								endcase
+							end
+
+			add3: present_state = add4;
+
+		endcase
+		
+	always @(present_state) // do the job for each state
+	begin
+		case (present_state) // assert the required signals in each state
+			reset_state:
+			begin
+				Gra <= 0; Grb <= 0; Grc <= 0; Yin <= 0; // initialize the signals
+			end
+			fetch0: begin
+				PCout <= 1; // see if you need to de-assert these signals
+					MARin <= 1;
+				IncPC <= 1;
+				Zin <= 1;
+			end
+			add3: begin
+				Grb <= 1; Rout <= 1;
+				Yin <= 1;
+			end
+		endcase
+	end
+
+endmodule 

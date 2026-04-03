@@ -33,6 +33,7 @@ vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/Que
 vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/cmodule.v}
 vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/IncPC.v}
 vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/mar.v}
+vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/control_unit.v}
 
 vlog -vlog01compat -work work +incdir+C:/QueenU/ELEC\ 374/ELEC374CPU3000 {C:/QueenU/ELEC 374/ELEC374CPU3000/CPU_G16_tb.v}
 
